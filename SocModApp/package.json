@@ -10,10 +10,12 @@
         "check": "echo 'Running TypeScript type check...' && tsc --noEmit",
         "test": "echo 'Running unit tests with Vitest...' && vitest",
         "test:ui": "echo 'Running unit tests with Vitest with browser UI...' && vitest --ui",
-        "ci": "echo 'Running CI (type check + test)...' && npm run check && npm run test"
+        "ci": "echo 'Running CI (type check + test)...' && npm run check && npm run test",
+        "deploy": "echo 'build and prepare for deplying to githb pages' && vite build && gh-pages -d ../dist"
     },
     "devDependencies": {
         "@vitest/ui": "^3.2.4",
+        "gh-pages": "^6.3.0",
         "serve": "^14.2.4",
         "typescript": "^5.8.3",
         "vite": "^7.0.6",

@@ -37,3 +37,6 @@ node .\node\simulate.js
 npm audit fix 
 #bezpecnostni aktualizace balicku - vcetne breaking change
 npm audit fix --force
+
+#podpora pro nasazeni prez github pages
+npm install --save-dev gh-pages
