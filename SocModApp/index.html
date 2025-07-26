@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Simulation App</title>
+</head>
+
+<body>
+  <h1>Model Simulation</h1>
+  <form id="paramForm">
+    <label>Initial Value: <input type="number" id="initValue" step="any"></label>
+    <label>Step: <input type="number" id="step" step="any"></label>
+    <label>Rounds: <input type="number" id="rounds"></label>
+    <button type="submit">Run Simulation</button>
+  </form>
+
+  <h2>Simulation Progress</h2>
+
+  <table id="resultTable">
+    <thead>
+      <tr>
+        <th>Round</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
