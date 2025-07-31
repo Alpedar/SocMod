@@ -1,4 +1,4 @@
-import { Model, ModelState } from "./model";
+import { Model, ModelState } from "./abstractModel.js";
 
 /**
  * Represents the state of a simple counter.

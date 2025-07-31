@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { CounterModel, CounterState } from '../src/counterModel';
+import { CounterModel, CounterState } from '../src/counterModel.js';
 
 describe('CounterModel.simulateWithHistory', () => {
   it('should produce correct number of rounds', async () => {

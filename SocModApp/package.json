@@ -7,16 +7,18 @@
         "dev": "echo 'Starting Vite dev server...' && vite",
         "build": "echo 'Building production bundle...' && vite build",
         "preview": "echo 'Previewing production bundle...' && vite preview",
-        "check": "echo 'Running TypeScript type check...' && tsc --noEmit",
+        "check": "echo 'Running TypeScript type check...' && tsc --noEmit --project tsconfig.node.json",
         "test": "echo 'Running unit tests with Vitest...' && vitest",
         "test:ui": "echo 'Running unit tests with Vitest with browser UI...' && vitest --ui",
         "ci": "echo 'Running CI (type check + test)...' && npm run check && npm run test",
         "deploy": "echo 'build and prepare for deplying to githb pages' && vite build && gh-pages -d ../dist"
     },
     "devDependencies": {
+        "@types/node": "^24.1.0",
         "@vitest/ui": "^3.2.4",
         "gh-pages": "^6.3.0",
         "serve": "^14.2.4",
+        "ts-node": "^10.9.2",
         "typescript": "^5.8.3",
         "vite": "^7.0.6",
         "vitest": "^3.2.4"
